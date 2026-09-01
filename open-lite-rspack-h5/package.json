@@ -1,0 +1,69 @@
+{
+  "name": "open-lite-rspack-h5",
+  "version": "1.0.0",
+  "private": true,
+  "description": "H5 Lite (Rspack runner)",
+  "packageManager": "pnpm@10.33.4",
+  "templateInfo": {
+    "name": "h5-lite",
+    "typescript": true,
+    "css": "Sass",
+    "framework": "React"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "new": "taro new",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.{ts,tsx}\" --max-warnings=0",
+    "lint:style": "stylelint \"src/**/*.{scss,less,styl,css}\" --allow-empty-input",
+    "check": "pnpm run typecheck && pnpm run lint && pnpm run lint:style",
+    "build:h5": "taro build --type h5 --no-check",
+    "dev:h5": "pnpm run build:h5 --watch",
+    "build": "pnpm run build:h5",
+    "dev": "pnpm run dev:h5"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": "eslint --max-warnings=0",
+    "src/**/*.{scss,less,styl,css}": "stylelint --allow-empty-input"
+  },
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ],
+  "author": "",
+  "dependencies": {
+    "@babel/runtime": "^7.24.4",
+    "@tarojs/components": "4.2.1",
+    "@tarojs/helper": "4.2.1",
+    "@tarojs/plugin-framework-react": "link:/Users/xuwentao.59/Documents/www/github/alvinhui/taro/packages/taro-framework-react",
+    "@tarojs/plugin-platform-h5": "link:/Users/xuwentao.59/Documents/www/github/alvinhui/taro/packages/taro-platform-h5",
+    "@tarojs/router": "link:/Users/xuwentao.59/Documents/www/github/alvinhui/taro/packages/taro-router",
+    "@tarojs/runtime": "4.2.1",
+    "@tarojs/shared": "4.2.1",
+    "@tarojs/taro": "4.2.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@tarojs/cli": "link:/Users/xuwentao.59/Documents/www/github/alvinhui/taro/packages/taro-cli",
+    "@tarojs/rspack-runner": "link:/Users/xuwentao.59/Documents/www/github/alvinhui/taro/packages/taro-rspack-runner",
+    "@tarojs/taro-loader": "4.2.1",
+    "babel-preset-taro": "4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-taro": "4.2.1",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.4.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
+    "postcss": "^8.5.6",
+    "sass": "^1.75.0",
+    "stylelint": "^16.4.0",
+    "stylelint-config-standard": "^38.0.0",
+    "@types/node": "^18",
+    "@types/react": "^18.0.0",
+    "typescript": "^5.4.5"
+  }
+}

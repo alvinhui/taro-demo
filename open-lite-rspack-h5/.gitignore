@@ -1,0 +1,8 @@
+dist/
+deploy_versions/
+.temp/
+node_modules/
+.pnpm-store/
+.DS_Store
+.swc
+*.local
