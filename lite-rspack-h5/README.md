@@ -1,4 +1,4 @@
-# open-lite-rspack-h5
+# lite-rspack-h5
 
 一个面向 H5 单端场景的轻量 Taro 4 + React 项目。
 
@@ -42,7 +42,7 @@ pnpm build
 cd packages/taro-components && pnpm run build:library && cd ../..
 ```
 
-由于 `demo/open-lite-rspack-h5` 在 monorepo 源码目录（而非 `.pnpm` 虚拟存储）里以 `link:` 方式引用这些包，pnpm 不会像安装已发布包那样自动生成"包指向自己/指向同仓库其他包"的 self-reference symlink，需要手动补齐（否则会报 `Module not found`）：
+由于 `demo/lite-rspack-h5` 在 monorepo 源码目录（而非 `.pnpm` 虚拟存储）里以 `link:` 方式引用这些包，pnpm 不会像安装已发布包那样自动生成"包指向自己/指向同仓库其他包"的 self-reference symlink，需要手动补齐（否则会报 `Module not found`）：
 
 ```bash
 cd ~/Documents/www/github/alvinhui/taro/packages

@@ -5,7 +5,7 @@ import prodConfig from './prod'
 // https://taro-docs.jd.com/docs/next/config#defineconfig-辅助函数
 export default defineConfig<'rspack'>(async (merge) => {
   const baseConfig: UserConfigExport<'rspack'> = {
-    projectName: 'open-lite-rspack-h5',
+    projectName: 'lite-rspack-h5',
     date: '2026-8-28',
     designWidth: 750,
     deviceRatio: {
