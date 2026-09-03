@@ -1,0 +1,38 @@
+{
+  "name": "taro-demo-native-shell",
+  "version": "1.0.0",
+  "private": true,
+  "description": "lite-webpack5-all 的 RN 原生壳工程，用于消费并验证模板构建产出的 RN bundle",
+  "packageManager": "pnpm@10.33.4",
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start --custom-log-reporter-path @tarojs/rn-supporter/TerminalReporter.js",
+    "podInstall": "cd ios && bundle install && bundle exec pod install",
+    "upgradePeerdeps": "install-peerdeps @tarojs/taro-rn@4.2.1 -o -P && install-peerdeps @tarojs/components-rn@4.2.1 -o -P && install-peerdeps @tarojs/router-rn@4.2.1 -o -P"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.4",
+    "@tarojs/components-rn": "4.2.1",
+    "@tarojs/runtime-rn": "4.2.1",
+    "@tarojs/taro-rn": "4.2.1",
+    "@tarojs/router-rn": "4.2.1",
+    "@tarojs/rn-supporter": "4.2.1",
+    "expo": "~50.0.0",
+    "react": "18.2.0",
+    "react-native": "0.73.11",
+    "react-native-gesture-handler": "~2.14.0",
+    "react-native-safe-area-context": "4.8.2",
+    "react-native-screens": "~3.29.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/preset-env": "^7.24.4",
+    "@react-native-community/cli-platform-android": "^12.3.0",
+    "@react-native/babel-preset": "^0.73.18",
+    "@react-native/gradle-plugin": "^0.73.0",
+    "@react-native/metro-config": "^0.73.2",
+    "install-peerdeps": "^3.0.3",
+    "pod-install": "^0.1.23"
+  }
+}

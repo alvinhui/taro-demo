@@ -1,0 +1,12 @@
+{
+  "appid": "testappid",
+  "projectname": "lite-webpack5-mini",
+  "description": "包含 6 个小程序端的 Lite 示例",
+  "compileType": "miniprogram",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "postcss": false,
+    "minified": false
+  }
+}

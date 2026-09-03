@@ -1,0 +1,16 @@
+{
+  "format": 2,
+  "projectname": "lite-webpack5-mini",
+  "description": "包含 6 个小程序端的 Lite 示例",
+  "component2": true,
+  "miniprogramRoot": "./dist",
+  "enableAppxNg": true,
+  "assetsInclude": ["ttf"],
+  "compileType": "mini",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "minified": false,
+    "enableSourceMap": false
+  }
+}

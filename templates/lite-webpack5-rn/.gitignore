@@ -1,0 +1,12 @@
+dist/
+deploy_versions/
+.temp/
+.rn_temp/
+node_modules/
+.DS_Store
+.swc
+*.local
+
+# RN 构建时由 @tarojs/rn-supporter 自动生成
+index.js
+metro.config.js

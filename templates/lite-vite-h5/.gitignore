@@ -1,0 +1,10 @@
+dist/
+deploy_versions/
+.temp/
+node_modules/
+.DS_Store
+.swc
+*.local
+.codex/
+.cursor/
+.mcp.json

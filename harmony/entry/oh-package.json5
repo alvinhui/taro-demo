@@ -1,0 +1,10 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Taro Harmony-CPP entry module",
+  "main": "",
+  "dependencies": {
+    "@taro-oh/library": "file:../static/@taro-oh/library-4.2.1.har"
+  },
+  "devDependencies": {}
+}

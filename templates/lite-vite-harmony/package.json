@@ -1,0 +1,46 @@
+{
+  "name": "lite-vite-harmony",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Harmony-CPP Hello World",
+  "packageManager": "pnpm@10.33.4",
+  "templateInfo": {
+    "name": "harmony-cpp-lite",
+    "typescript": true,
+    "css": "None",
+    "framework": "React"
+  },
+  "scripts": {
+    "build:harmony": "node ../../harmony/scripts/build-demo.mjs lite-vite-harmony",
+    "build:hap": "node ../../harmony/scripts/build-hap.mjs",
+    "dev:harmony": "node ../../harmony/scripts/watch-demo.mjs lite-vite-harmony",
+    "typecheck": "tsc --noEmit",
+    "build": "pnpm run build:harmony",
+    "dev": "pnpm run dev:harmony"
+  },
+  "dependencies": {
+    "@tarojs/components": "4.2.1",
+    "@tarojs/helper": "4.2.1",
+    "@tarojs/plugin-framework-react": "4.2.1",
+    "@tarojs/plugin-platform-harmony-cpp": "4.2.1",
+    "@tarojs/plugin-platform-harmony-ets": "4.2.1",
+    "@tarojs/react": "4.2.1",
+    "@tarojs/runtime": "4.2.1",
+    "@tarojs/shared": "4.2.1",
+    "@tarojs/taro": "4.2.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-react": "^7.24.1",
+    "@babel/preset-typescript": "^7.24.1",
+    "@tarojs/cli": "4.2.1",
+    "@tarojs/vite-runner": "4.2.1",
+    "@types/node": "^18",
+    "@types/react": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.0",
+    "postcss": "^8.5.6",
+    "typescript": "^5.4.5",
+    "vite": "^4.2.0"
+  }
+}

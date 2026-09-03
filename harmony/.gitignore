@@ -1,0 +1,11 @@
+.hvigor/
+.active-demo
+oh_modules/
+local.properties
+static/
+**/.preview/
+**/build/
+**/oh_modules/
+**/.cxx/
+entry/src/main/ets/
+entry/src/main/resources/rawfile/
