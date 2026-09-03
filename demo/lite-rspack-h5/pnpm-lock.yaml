@@ -18,14 +18,14 @@ importers:
         specifier: 4.2.1
         version: 4.2.1(@swc/helpers@0.5.23)
       '@tarojs/plugin-framework-react':
-        specifier: link:../../taro/packages/taro-framework-react
-        version: link:../../taro/packages/taro-framework-react
+        specifier: link:../../../taro/packages/taro-framework-react
+        version: link:../../../taro/packages/taro-framework-react
       '@tarojs/plugin-platform-h5':
-        specifier: link:../../taro/packages/taro-platform-h5
-        version: link:../../taro/packages/taro-platform-h5
+        specifier: link:../../../taro/packages/taro-platform-h5
+        version: link:../../../taro/packages/taro-platform-h5
       '@tarojs/router':
-        specifier: link:../../taro/packages/taro-router
-        version: link:../../taro/packages/taro-router
+        specifier: link:../../../taro/packages/taro-router
+        version: link:../../../taro/packages/taro-router
       '@tarojs/runtime':
         specifier: 4.2.1
         version: 4.2.1
@@ -52,11 +52,11 @@ importers:
         specifier: ^19.8.1
         version: 19.8.1
       '@tarojs/cli':
-        specifier: link:../../taro/packages/taro-cli
-        version: link:../../taro/packages/taro-cli
+        specifier: link:../../../taro/packages/taro-cli
+        version: link:../../../taro/packages/taro-cli
       '@tarojs/rspack-runner':
-        specifier: link:../../taro/packages/taro-rspack-runner
-        version: link:../../taro/packages/taro-rspack-runner
+        specifier: link:../../../taro/packages/taro-rspack-runner
+        version: link:../../../taro/packages/taro-rspack-runner
       '@tarojs/taro-loader':
         specifier: 4.2.1
         version: 4.2.1(@swc/helpers@0.5.23)(webpack@5.91.0)

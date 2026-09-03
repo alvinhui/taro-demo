@@ -16,13 +16,13 @@
 
 > 本示例的业务源码和质量门禁与 `open-lite-webpack5-h5` 保持一致，仅使用不同的 H5 构建器，用于验证 Taro H5 在 Rspack 下的构建能力。
 
-本示例改为使用 Taro 官方原生 `compiler: 'rspack'`（`config/index.ts` 中 `type: 'h5'` + `compiler: 'rspack'`），对应的 CLI/service/H5 平台/React 框架层改动尚未合入 [NervJS/taro](https://github.com/NervJS/taro) 主仓库，当前依赖 fork 仓库 [alvinhui/taro](https://github.com/alvinhui/taro)（Draft PR [#19490](https://github.com/NervJS/taro/pull/19490)）的源码，通过 `package.json` 里的 `link:` 协议直接指向本机 fork 仓库的绝对路径。
+本示例改为使用 Taro 官方原生 `compiler: 'rspack'`（`config/index.ts` 中 `type: 'h5'` + `compiler: 'rspack'`），对应的 CLI/service/H5 平台/React 框架层改动尚未合入 [NervJS/taro](https://github.com/NervJS/taro) 主仓库，当前依赖 fork 仓库 [alvinhui/taro](https://github.com/alvinhui/taro)（Draft PR [#19490](https://github.com/NervJS/taro/pull/19490)）的源码，通过 `package.json` 里的 `link:` 协议按当前仓库与 fork 仓库的同级目录关系引用。
 
 ## 快速开始
 
 ### 前置条件：准备 fork 仓库源码
 
-依赖包（`@tarojs/cli`、`@tarojs/rspack-runner`、`@tarojs/plugin-platform-h5`、`@tarojs/plugin-framework-react`、`@tarojs/router`）均以 `link:` 协议指向本机路径 `~/Documents/www/github/alvinhui/taro`（`package.json` 中写死的绝对路径，如实际路径不同需同步修改）。首次使用前，需在该 fork 仓库内完成以下构建：
+依赖包（`@tarojs/cli`、`@tarojs/rspack-runner`、`@tarojs/plugin-platform-h5`、`@tarojs/plugin-framework-react`、`@tarojs/router`）均以 `link:` 协议指向同级目录中的 fork 仓库 `~/Documents/www/github/alvinhui/taro`（相对于本示例为 `../../../taro`，如目录关系不同需同步修改）。首次使用前，需在该 fork 仓库内完成以下构建：
 
 ```bash
 cd ~/Documents/www/github/alvinhui/taro
